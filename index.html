@@ -1,0 +1,155 @@
+ <!
+ \.DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header finisher-header" style="width: 100%; height: 300px;">
+        <nav>
+            <ul> 
+                <li><a href="#" class="active">Resume Builder</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="resume-container">
+            <h1>Resume Builder</h1>
+            <form id="resume-form">
+                <form id="resume-form">
+                    <!-- Other form fields... -->
+                    <div class="form-group">
+                        <label for="profile-picture">Profile Picture</label>
+                        <input type="file" id="profile-picture" accept="image/*">
+                    </div>
+                    <!-- Other form fields... -->
+                </form>
+                
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="degree">Degree:</label>
+                    <input type="text" id="degree" name="degree">
+                </div>
+                <div class="form-group">
+                    <label for="university">University:</label>
+                    <input type="text" id="university" name="university">
+                </div>
+                <div class="form-group">
+                    <label for="position">Position:</label>
+                    <input type="text" id="position" name="position">
+                </div>
+                <div class="form-group">
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills (comma-separated):</label>
+                    <input type="text" id="skills" name="skills">
+                </div>
+                <button type="submit">Generate Resume</button>
+            </form>
+
+            <div class="generated-resume"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Interactive Resume Builder</p>
+    </footer>
+
+    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header finisher-header" style="width: 100%; height: 300px;">
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Resume Builder</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="resume-container">
+            <h1>Resume Builder</h1>
+            <form id="resume-form">
+                <div class="form-group">
+                    <label for="profile-picture">Profile Picture</label>
+                    <input type="file" id="profile-picture" accept="image/*">
+                </div>
+                <!-- Other form fields... -->
+            </form>
+            <button onclick="generateResume()">Generate Resume</button>
+            <div class="generated-resume"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Interactive Resume Builder</p>
+    </footer>
+    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        new FinisherHeader({
+            "count": 32,
+            "size": {
+                "min": 2,
+                "max": 62,
+                "pulse": 0
+            },
+            "speed": {
+                "x": {
+                    "min": 0,
+                    "max": 0.8
+                },
+                "y": {
+                    "min": 0,
+                    "max": 0.2
+                }
+            },
+            "colors": {
+                "background": "#15182e",
+                "particles": [
+                    "#ff926b",
+                    "#87ddfe",
+                    "#acaaff",
+                    "#1bffc2",
+                    "#f9a5fe"
+                ]
+            },
+            "blending": "screen",
+            "opacity": {
+                "center": 1,
+                "edge": 1
+            },
+            "skew": -1,
+            "shapes": [
+                "c",
+                "s",
+                "t"
+            ]
+        });
+    </script>
+    <script src="script.ts"></script>
+</body>
+</html>
+
+
